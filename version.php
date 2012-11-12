@@ -16,4 +16,4 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 $plugin->version = 2011012000;
-$plugin->release = '2.3.1';
+$plugin->release = '2.3.1.1';
