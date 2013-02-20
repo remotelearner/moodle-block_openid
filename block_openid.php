@@ -21,7 +21,7 @@ require_once("{$CFG->dirroot}/auth/openid/locallib.php");
 class block_openid extends block_base {
     function init() {
         $this->title = get_string('pluginname','block_openid');
-        $this->version = 2011012000;
+        $this->version = 2013022014;
     }
 
     function applicable_formats() {
@@ -29,7 +29,7 @@ class block_openid extends block_base {
     }
 
     function get_content() {
-        global $USER, $CFG;
+        global $USER, $CFG, $DB, $OUTPUT;
 
         // We don't want to show this block if OpenID auth isn't enabled
         if (!is_enabled_auth('openid')) {
@@ -67,6 +67,7 @@ class block_openid extends block_base {
             return $this->content;
         }
 
+        $this->content = new stdClass;
         $this->content->footer = ''; // too much space using this for change pwd
         $this->content->text = '';
         $username = (get_moodle_cookie() === 'nobody') 
