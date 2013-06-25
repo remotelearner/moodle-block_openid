@@ -15,5 +15,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-$plugin->version = 2013022015;
-$plugin->release = '2.4.1.2';
+$plugin->version  = 2013062500;  // The current module version (Date: YYYYMMDDXX)
+$plugin->requires = 2013051400;  // Requires this Moodle version
+$plugin->release = '2.5.1.0';
