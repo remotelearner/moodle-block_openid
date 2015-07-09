@@ -18,3 +18,6 @@
 $plugin->version  = 2014053000;  // The current module version (Date: YYYYMMDDXX)
 $plugin->requires = 2014051201;  // Requires this Moodle version
 $plugin->release = '2.7.1.0';
+$plugin->dependencies = array(
+    'auth_openid'  => 2014053000,
+);
