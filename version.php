@@ -15,9 +15,9 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-$plugin->version  = 2014053000;  // The current module version (Date: YYYYMMDDXX)
+$plugin->version  = 2014053001;  // The current module version (Date: YYYYMMDDXX)
 $plugin->requires = 2014051201;  // Requires this Moodle version
-$plugin->release = '2.7.1.0';
+$plugin->release = '2.7.1.1';
 $plugin->dependencies = array(
     'auth_openid'  => 2014053000,
 );
